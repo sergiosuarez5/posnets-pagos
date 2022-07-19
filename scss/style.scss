@@ -85,21 +85,20 @@ $font2:'Titillium Web', sans-serif;
 
 // inicio main "index"
 .mainI {
-    background: url(../assets/img/bg-pof.png);
+    background: url(../assets/img/bg-money.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
     height: 100vh;
     width: 100%;
     font-family: $font2;
 
     h1 {
-        font-size: 3.2rem;
-        font-weight: 700;
-        color: $col3;
+        font-size: 2.9rem;
+        font-weight: 50;
+        color: $col4;
         border-radius: 20px;
         text-align: center;
-        padding-top: 80px;
+        padding-top:5px;
     }
 
     .btn1 { 
@@ -139,21 +138,30 @@ $font2:'Titillium Web', sans-serif;
 
 // inicio section "productos"
 section{
+    text-align: center;
     font-family: $font2;
     h2{
         font-size: 20px;
         font-family: $font2;
+    }
+    p{
+        font-size: 30px;
+        padding: 30px;
     }
 }
 
 .card {
     font-family: $font2;
     transition: 0.4s;
+    box-shadow: 2px 0px 7px 2px #000000bf;
+    -webkit-box-shadow: 2px 0px 7px 2px #000000bf;
+    -moz-box-shadow: 2px 0px 7px 2px #000000bf;
+
 
     &:hover {
-        box-shadow: 2px 0px 7px 2px #000000bf;
-        -webkit-box-shadow: 2px 0px 7px 2px #000000bf;
-        -moz-box-shadow: 2px 0px 7px 2px #000000bf;
+        box-shadow: 2px 0px 7px 2px #6A5EBF;
+        -webkit-box-shadow: 2px 0px 7px 2px #6A5EBF;
+        -moz-box-shadow: 2px 0px 7px 2px #6A5EBF;
     }
 }
 // fin section "productos"
@@ -197,30 +205,32 @@ section{
         }
     }
 
-    .formulario {
+/*     .formulario {
         font-family: $font2;
         margin: 15px;
-    }
+    } */
 
     .iconosRedes {
+        text-align: center;
+        justify-content: center;
         font-family: $font2;
 
         ul li a {
-            color: $col3;
-            float: left;
+            color: $col;
             font-size: 40px;
-            margin-left: 35px;
-            margin-right: 40px;
             transition: 0.4s;
 
             &:hover {
+                color: $col3;
                 transform: scale(1.35);
             }
         }
     }
 
     .info {
+        text-align: center;
         margin-top: 35px;
+        color: $col;
     }
 }
 // fin main "contacto"
@@ -255,7 +265,7 @@ footer {
         transition: 0.3s;
 
         &:hover {
-            color: $col1;
+            color: $col;
         }
     }
 
@@ -267,7 +277,7 @@ footer {
         transition: 0.3s;
 
         &:hover {
-            color: $col1;
+            color: $col;
         }
     }
 }
