@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  color: #000;
+  transition: all 0.5s;
+}
+.navbar-brand:hover {
+  transition: all 0.5s;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0px 10px 0px 10px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+}
+.nav-link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #6A5EBF;
+}
+.nav-link:hover::before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.btn0, .mainI .btn1 {
+  height: 40px;
+  width: 40%;
+  outline: none;
+  border: none;
+  background-color: #6A5EBF;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.5s;
+}
+.btn0:hover, .mainI .btn1:hover {
+  background-color: #6A5EBF;
+}
+
+.mainI {
+  background: url(../assets/img/bg-pof.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  width: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+.mainI h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 80px;
+}
+.mainI .btn1 {
+  height: 45px;
+  width: 35%;
+  font-size: 20px;
+}
+.mainI .btn1:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+.mainP h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Titillium Web", sans-serif;
+}
+.mainP p {
+  text-align: center;
+  font-size: 25px;
+  color: #6A5EBF;
+}
+
+.fa-whatsapp {
+  width: 80px;
+}
+
+section {
+  font-family: "Titillium Web", sans-serif;
+}
+section h2 {
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.card {
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.4s;
+}
+.card:hover {
+  box-shadow: 2px 0px 7px 2px rgba(0, 0, 0, 0.7490196078);
+  -webkit-box-shadow: 2px 0px 7px 2px rgba(0, 0, 0, 0.7490196078);
+  -moz-box-shadow: 2px 0px 7px 2px rgba(0, 0, 0, 0.7490196078);
+}
+
+.mainC {
+  font-family: "Titillium Web", sans-serif;
+}
+.mainC h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.mainC p {
+  text-align: center;
+  font-size: 25px;
+  color: #6A5EBF;
+}
+
+.contacto {
+  font-family: "Titillium Web", sans-serif;
+}
+.contacto .btn2 {
+  height: 45px;
+  width: 35%;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #6A5EBF;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.contacto .btn2:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+.contacto .formulario {
+  font-family: "Titillium Web", sans-serif;
+  margin: 15px;
+}
+.contacto .iconosRedes {
+  font-family: "Titillium Web", sans-serif;
+}
+.contacto .iconosRedes ul li a {
+  color: #000;
+  float: left;
+  font-size: 40px;
+  margin-left: 35px;
+  margin-right: 40px;
+  transition: 0.4s;
+}
+.contacto .iconosRedes ul li a:hover {
+  transform: scale(1.35);
+}
+.contacto .info {
+  margin-top: 35px;
+}
+
+footer {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #000;
+}
+footer .logoFooter {
+  padding: 20px;
+}
+footer .logoFooter:hover {
+  color: #FF4821;
+  cursor: pointer;
+}
+footer .titulitos {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: underline;
+}
+footer .links {
+  font-size: 15px;
+  margin: 0px 10px 0px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer .links:hover {
+  color: #FF4821;
+}
+footer ul li a {
+  font-size: 35px;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: #FF4821;
+}/*# sourceMappingURL=style.css.map */
