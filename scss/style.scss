@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Raleway:wght@200&family=Roboto+Mono:wght@300&display=swap');
 
 // colores
 $col:#6A5EBF;
@@ -9,15 +10,17 @@ $col3:#000;
 $col4:#fff;
 
 // fuentes
-$font1:'Rubik Glitch', cursive;
 $font2:'Titillium Web', sans-serif;
-
+$font:'Montserrat', sans-serif;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background: url(../assets/img/bg-pof.png);
+}
 // inicio navbar
 .navbar-brand {
     color: $col3;
@@ -33,7 +36,7 @@ $font2:'Titillium Web', sans-serif;
     margin: 0px 10px 0px 10px;
     color: $col3;
     text-transform: uppercase;
-    font-family: $font2;
+    font-family: $font;
     position: relative;
 
     &:hover {
@@ -70,15 +73,17 @@ $font2:'Titillium Web', sans-serif;
     width: 40%;
     outline: none;
     border: none;
-    background-color: #6A5EBF;
+    background-color: $col;
     color: $col4;
     font-weight: 700;
     border-radius: 5px;
+    border: solid 2px $col4;
     font-family: $font2;
     transition: 0.5s;
 
     &:hover {
-        background-color: #6A5EBF;
+        background-color: $col4;
+        border: solid 2px $col;
     }
 }
 // fin navbar
@@ -93,8 +98,8 @@ $font2:'Titillium Web', sans-serif;
     font-family: $font2;
 
     h1 {
-        font-size: 2.9rem;
-        font-weight: 50;
+        font-size: 2.8rem;
+        font-weight: 30;
         color: $col4;
         border-radius: 20px;
         text-align: center;
@@ -147,6 +152,10 @@ section{
     p{
         font-size: 30px;
         padding: 30px;
+    }
+
+    p{
+        color: $col;
     }
 }
 
@@ -221,7 +230,7 @@ section{
             transition: 0.4s;
 
             &:hover {
-                color: $col3;
+                color: $col4;
                 transform: scale(1.35);
             }
         }
@@ -237,8 +246,8 @@ section{
 
 // inicio footer
 footer {
-    font-family: $font2;
-    background-color: $col3;
+    font-family: $font;
+    background-color: $col4;
 
     .logoFooter {
     padding: 20px;
@@ -249,29 +258,41 @@ footer {
         }
     }
 
-    .titulitos {
+    .titulitos2 {
         font-size: 25px;
-        color: $col4;
+        color: $col3;
+        text-decoration: overline;
+        padding: 15px;
+    }
+
+    .titulitos1 {
+        font-size: 25px;
+        color: $col3;
         text-decoration: underline;
     }
 
     .links {
         font-size: 15px;
+        padding: 6px;
         margin: 0px 10px 0px 10px;
-        color: $col4;
+        color: $col;
         text-transform: uppercase;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-decoration: none;
         transition: 0.3s;
+        
 
         &:hover {
-            color: $col;
+            color: $col4;
+            background-color: $col;
+            padding:5px 5px;
+            border-radius: 10px;
         }
     }
 
     ul li a {
         font-size: 35px;
-        color: $col4;
+        color: $col;
         margin-left: 20px;
         margin-right: 20px;
         transition: 0.3s;
@@ -279,6 +300,9 @@ footer {
         &:hover {
             color: $col;
         }
+    }
+    p{
+        color: $col;
     }
 }
 // fin footer
